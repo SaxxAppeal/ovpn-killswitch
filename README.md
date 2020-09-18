@@ -8,7 +8,7 @@ Spawns OpenVPN connection and monitors external IP for changes. If a change is d
 
 -Killswitch.sh-
 
-This is the script that actually does all of the work. Fill in your email address and uncomment line 39.
+This is the script that actually does all of the work. Uncomment line 39 and fill in your email address.
 
 error.txt-
 
