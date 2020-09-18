@@ -1,0 +1,2 @@
+#plaintext username for OpenVPN here
+#plaintext password for OpenVPN here
