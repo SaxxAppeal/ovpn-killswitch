@@ -10,7 +10,7 @@ PublicIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 loop="true"
 
 #Fire up OpenVPN, credentials referenced from pwd file in this directory
-openvpn ny_udp.ovpn&
+openvpn cert.ovpn&
 sleep 10
 
 #Fire up the QBitTorrent  service
