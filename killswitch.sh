@@ -35,7 +35,8 @@ echo "Service stopped. Terminating..."
 
 #Write the termination event to the log file, and send an email  to let the sysadmin know!
 echo -e $(date): Script terminated. > /script/log.txt  
-ssmtp imraan@khan.gq < error.txt
+
+#ssmtp your@email.here < error.txt
 
 fi
 done
