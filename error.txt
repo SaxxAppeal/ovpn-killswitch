@@ -1,0 +1,3 @@
+Subject: Torrent Server Down!
+
+The killswitch detected a change in your public IP and has shut down the qBitTorrent service.
