@@ -3,10 +3,11 @@ Spawns OpenVPN connection and monitors external IP for changes. If a change is d
  
 -Dependencies-
 
-1) qBitTorrent-nox installed and configured as a service named qbittorrent-nox (the default name)
-2) ssmtp installed and configured to send email from command line. You can use an internal mail server if one is configured on this serever, or you can connect to an SMTP server of your choice.
-3) You've put all of these files into '/script'. You'll probably need to create this directory.
-4) You have valid credentials to connect to an OpenVPN server. This script is hard coded to use the 'config.ovpn' file for its configuration. You'll need to supply your own .ovpn file from your provider here, and your own user name and password in the 'pass.txt' file.
+1) qBitTorrent-nox installed and configured as a service named qbittorrent-nox (the default name).
+2) OpenVPN installed.
+3) ssmtp installed and configured to send email from command line. You can use an internal mail server if one is configured on this serever, or you can connect to an SMTP server of your choice. (This is optional and easily removed if you don't want to receive email notifications.)
+4) You've put all of these files into '/script'. You'll probably need to create this directory.
+5) You have valid credentials to connect to an OpenVPN server. This script is hard coded to use the 'config.ovpn' file for its configuration. You'll need to supply your own .ovpn file from your provider here, and your own user name and password in the 'pass.txt' file.
 
 -Killswitch.sh-
 
