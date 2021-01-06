@@ -16,7 +16,7 @@ PublicIP=$(curl http://checkip.amazonaws.com)
 
 #Fire up OpenVPN, credentials referenced from pwd file in this directory
 echo "Starting OpenVPN..." 
-openvpn --config /script/clt_udp.ovpn&
+openvpn --config /script/cert.ovpn&
 sleep 10
 MaskedIP=$(curl http://checkip.amazonaws.com)
 
@@ -47,7 +47,9 @@ echo "Service stopped. Terminating OpenVPN..."
 sudo pkill -sigterm -f openvpn
 #Write the termination event to the log file, and send an email  to let the sysadmin know!
 echo -e $(date): Script terminated. >> /script/log.txt  
-ssmtp imraan@khan.gq < /script/error.txt
+
+#Fill in your email address in the next line! 
+ssmtp [YOUR EMAIL ADDRESS] < /script/error.txt
 sleep 5
 echo Restarting all......
 done
