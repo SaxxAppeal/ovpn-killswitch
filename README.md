@@ -1,5 +1,5 @@
 # ovpn-killswitch
-Spawns OpenVPN connection and monitors external IP for changes. If a change is detected, qbittorrent-nox service is shut down and the SysAdmin is notified. This script has been updated to run daemonized.
+Spawns OpenVPN connection and monitors external IP for changes. If a change is detected, qbittorrent-nox service is shut down and the SysAdmin is notified. This script has been updated to run daemonized. Put all of these files into the directory '/script'
 
 To daemonize:
 Create the file vpn.service at /etc/systemd/system with the following 7 lines:
@@ -24,6 +24,8 @@ Requires=vpn.service
 
 1) qBitTorrent-nox installed and configured as a service named qbittorrent-nox
 2) ssmtp installed and configured to send email from command line. You can use an internal mail server if one is configured on this serever, or you can connect to an SMTP server of your choice.
+3) You've put all of these files into '/script'. You'll probably need to create this directory.
+4) You have valid credentials to connect to an OpenVPN server. This script is hard coded to use the 'config.ovpn' file for its configuration. You'll need to supply your own .ovpn file from your provider here, and your own user name and password in the 'pass.txt' file.
 
 -Killswitch.sh-
 
